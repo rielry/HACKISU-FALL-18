@@ -8,4 +8,6 @@ def hello():
     return "Hello World!"
 
 if __name__ == '__main__':
-    os.system('more runtime.txt')
+    os.system('waon -i happybirthday.wav -o birthday.mid')
+    if open('birthday.mid'):
+        print('yea')
