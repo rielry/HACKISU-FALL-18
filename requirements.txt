@@ -4,7 +4,7 @@ colour==0.1.4
 decorator==4.0.11
 Django==1.11.2
 ez-setup==0.9
-Flask==0.10.1
+Flask==1.0.2
 Flask-WTF==0.14.2
 gunicorn==19.4.5
 infinity==1.4
