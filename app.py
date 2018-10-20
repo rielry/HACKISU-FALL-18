@@ -9,6 +9,6 @@ def home():
 
 if __name__ == '__main__':
 	app.run()
-    # os.system('waon -i happybirthday.wav -o birthday.mid')
-    # if open('birthday.mid'):
-        # print('yea')
+    os.system('waon -i happybirthday.wav -o birthday.mid')
+    if open('birthday.mid'):
+        print('yea')
