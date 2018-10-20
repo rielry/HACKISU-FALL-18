@@ -8,6 +8,7 @@ def home():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    os.system('waon -i happybirthday.wav -o birthday.mid')
-    if open('birthday.mid'):
-        print('yea')
+	app.run()
+    # os.system('waon -i happybirthday.wav -o birthday.mid')
+    # if open('birthday.mid'):
+        # print('yea')

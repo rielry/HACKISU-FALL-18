@@ -32,19 +32,7 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
-}
-bg-image {
-    /* The image used */
-  background-image: url("https://i1.wp.com/www.wagpets.com/wp-content/uploads/2017/12/gold-golden-retriever.jpeg?fit=1920%2C1080&ssl=1");
-  
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  
-  height: 100%; 
-  width:100%;
-  z-index: 9999999999;
-
+  background-image: url('../guitar-0.jpg');
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -67,6 +55,11 @@ bg-image {
 .cover-container {
   margin-right: auto;
   margin-left: auto;
+}
+
+.cover-heading {
+  font-size: 32pt;
+  margin-bottom:1em;
 }
 
 /* Padding for spacing */
@@ -106,4 +99,15 @@ bg-image {
   .cover-container {
     width: 700px;
   }
+}
+
+/*
+ * Backing
+ */
+
+.backing{
+  background-color: rgba(0,0,0, 0.6);
+  border-radius: 5px;  
+  padding: 2em;
+  padding-top, padding-bottom: 4em;
 }
