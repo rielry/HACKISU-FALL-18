@@ -1,7 +1,12 @@
-from flask import Flask, render_template
 import os
+from flask import Flask, flash, request, render_template, redirect, url_for
+from werkzeug.utils import secure_filename
+
+UPLOAD_FOLDER = '/uploads'
+ALLOWED_EXTENSIONS = set('mid')
 
 app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/')
 def home():

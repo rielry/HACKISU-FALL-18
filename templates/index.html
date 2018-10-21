@@ -25,24 +25,36 @@
 		            	<h1 class="cover-heading">Tutti</h1>
 		            	<div class="row">
 		            		<div class="col-sm-5">
-		    		    	    <button class="btn btn-light btn-lg lead cover">Record Now</h3>
+		    		    	    <button class="btn btn-light btn-lg lead cover" style="margin-top: 75px;">Record Now</button>
 		            		</div>
 		            		<div class="col-sm-2">
-		            			<p class="lead" style="strong">-or-</p>
+		            			<p class="lead" style="margin-top: 75px; font-family: lobsterLol;">-or-</p>
 		            		</div>
 		            		<div class="col-sm-5">
-			        	      	<button class="btn btn-light btn-lg lead cover">Upload File</h3>
+			        	      	<form action="upload.php" method="POST">
+								  <input type="file" multiple />
+								  <p>Upload MIDI files (drag or click)</p>
+								  <button type="submit" class="btn btn-light btn-lg lead cover" style="margin-top: 210px;">Upload</button>
+								</form>
 		           		 	</div>
 		            	</div>
           			</div>
 
-					<div class="mastfoot">
+					<footer class="footsy">
 						<div class="inner">
 							<p>A project by Jack Johnson, Riley Jhi, and Ryan McManaman for <a href="https://hackisu.org/">HackISU</a>.</p>
 						</div>
-					</div>
+					</footer>
 		        </div>
 			</div>
 		</div>
 	</body>
+
+	<script>
+		$(document).ready(function(){
+		  $('form input').change(function () {
+		    $('form p').text(this.files.length + " file(s) selected");
+		  });
+		});
+	</script>
 </html>
